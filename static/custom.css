@@ -1,0 +1,23 @@
+strong {
+	background-color:yellow;
+}
+
+h2{
+	text-decoration: underline;
+}
+
+h1{
+	font-weight:bold;
+}
+
+p > a{
+	color: #4183C4;
+}
+a.list-group-item{
+	color: #4183C4;
+}
+
+abbr{
+	text-decoration: underline;
+	background-color: yellow;
+}
