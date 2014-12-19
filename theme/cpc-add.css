@@ -1,14 +1,14 @@
 /* class = cpc-main-content*/
-.cpc-main-content.entry-title{
+#cpc-main-content.entry-title{
 	background-color: white;
 }
 
-.cpc-main-content  h2,h3,h4{
+#cpc-main-content  h2,h3,h4{
 	margin-bottom: 0.2em;
 	padding-left: 0.3em;
 }
 
-.cpc-main-content  h2{
+#cpc-main-content  h2{
 	background-color: #9DACCC;
 	color: #3b5998;
 	border-bottom-style: none;
@@ -16,7 +16,7 @@
   border-bottom-width: 0.2em;
 }
 
-.cpc-main-content h3{
+#cpc-main-content h3{
 	background-color: #C4CDE0;
 	color: 	#121B2E;
 	border-bottom-style: none;
@@ -24,7 +24,7 @@
   border-bottom-width: 1px;
 }
 
-.cpc-main-content h4{
+#cpc-main-content h4{
 	background-color: #EBEEF5;
 	color: 	#121B2E;
 	border-bottom-style: none;
@@ -32,12 +32,12 @@
   border-bottom-width: 1px;
 }
 
-.cpc-main-content ul{
+#cpc-main-content ul{
 	list-style-type: disc;
 	list-style-position: inside;
 }
 
-.cpc-main-content dl{
+#cpc-main-content dl{
 	float: left;
 	width: 520px;
 	margin: 1em 0;
@@ -45,7 +45,7 @@
 	border-bottom: 1px solid #999;
 }
 	
-.cpc-main-content dt{
+#cpc-main-content dt{
 	clear: left;
 	float: left;
 	width: 200px;
@@ -55,7 +55,7 @@
 	font-weight: bold;
 }
 	
-.cpc-main-content dd{
+#cpc-main-content dd{
 	float: left;
 	width: 300px;
 	margin: 0;
@@ -63,19 +63,19 @@
 	border-top: 1px solid #999;
 }
 
-.cpc-main-content table {
+#cpc-main-content table {
   margin: 10px 10px 10px 10px;
 }
 
-.cpc-main-content th, td {
+#cpc-main-content th, td {
     padding: 10px;
 }
 
-.cpc-main-content table, th, td {
+#cpc-main-content table, th, td {
     border: 1px solid black;
 }
 
-.cpc-main-content{
+#cpc-main-content{
 	position: relative;
 }
 

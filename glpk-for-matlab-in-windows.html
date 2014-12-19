@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		
-		   <title>Welcome to My Site</title>
+		   <title>GLPK for Matlab in Windows</title>
 		   <meta charset="utf-8" />
 			
 				
@@ -55,20 +55,33 @@
 					
             <header>
 				<h1 class="entry-title">
-					<a href="http://cpchang.github.io/welcome-to-my-site.html" rel="bookmark"title="Permalink to Welcome to My Site">Welcome to My Site</a>
+					<a href="http://cpchang.github.io/glpk-for-matlab-in-windows.html" rel="bookmark"title="Permalink to GLPK for Matlab in Windows">GLPK for Matlab in Windows</a>
 				</h1>
 				
 			</header>
            <footer class="post-info">
-				<abbr class="published" title="2014-12-19T07:40:46.487603+08:00">
-					Fri, 19 Dec 2014
+				<abbr class="published" title="2014-11-14T00:00:00+08:00">
+					Fri, 14 Nov 2014
 				</abbr>
 				<address class="vcard author">By 
 					<a class="url fn" href="http://cpchang.github.io/author/chang-pao-chang.html"> Chang-Pao Chang</a>
 				</address>
 			</footer><!-- /.post-info -->
             <div class="entry-content">
-				
+				<h2 id="glpk">GLPK</h2>
+<p><a href="http://www.gnu.org/software/glpk/glpk.html">GLPK (GNU Linear Programming Kit)</a> is a set of routines written in the ANSI C programming language and organized in the form of a callable library. It is intended for solving linear programming (LP), mixed integer programming (MIP), and other related problems.</p>
+<h3 id="glpk-mex">GLPK MEX</h3>
+<p><a href="http://glpkmex.sourceforge.net/">GLPK MEX</a> is a Matlab MEX Interface for the GLPK library, developed by Nicolo' Giorgetti.</p>
+<h3 id="downloads">Downloads</h3>
+<p>Download the compiled glpk and interface from <a href="http://sourceforge.net/projects/glpkmex/">sourceforge</a></p>
+<p><a href="http://sourceforge.net/projects/glpkmex/files/glpkmex/2.11/glpkmex-2.11-src.zip/download">glpkmex-2.11-src.zip</a></p>
+<p>So far, this version of glpkmex uses GLPK 4.40 to build its mex file. </p>
+<h3 id="installation">Installation</h3>
+<p>Simply unzip it and add the folder to matlab path. </p>
+<h3 id="usage">Usage</h3>
+<p>Very similar to matlab linear program function, <a href="http://www.mathworks.com/help/optim/ug/linprog.html">linprog</a>. </p>
+<div class="codehilite"><pre><span class="p">[</span><span class="n">xopt</span><span class="p">,</span><span class="n">fopt</span><span class="p">,</span><span class="n">status</span><span class="p">,</span><span class="n">extra</span><span class="p">]=</span><span class="n">glpk</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">lb</span><span class="p">,</span><span class="n">ub</span><span class="p">,</span><span class="n">ctype</span><span class="p">,</span><span class="n">vartype</span><span class="p">,</span><span class="n">sense</span><span class="p">,</span><span class="n">param</span><span class="p">)</span>
+</pre></div>
 			</div><!-- /.entry-content -->
 			
 			

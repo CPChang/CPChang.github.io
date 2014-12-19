@@ -1,0 +1,271 @@
+/* padding 和 margin 的差別可用 background-color 看出來, 若使用 margin，則 background-color 不會包到多出來的部分，反之，padding 就會。*/
+
+#cpc-main-content h2 { 
+	/*text-decoration: underline; */
+	border-top: medium none; 		
+	color: navy; 
+	background-color: #D7FFFF;
+	line-height:1.5em;
+}
+#cpc-main-content h3 {
+	background-color: #E4F5E4;
+	/*text-decoration: underline; */
+	color: DarkGreen ;
+}
+
+#cpc-main-content h4{
+	background-color: #F4F4F4; /* 1 Darker than WhiteSmoke */
+	color: DarkSlateGray;
+}
+
+#cpc-main-content h2,h3,h4{
+	font-weight: bold;
+}
+
+#cpc-main-content ul{
+	color: RoyalBlue;
+}
+
+#cpc-main-content p {
+	line-height: 1.2em;
+	color: black; 	
+	text-align: justify;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+	
+
+
+p:hover{
+	background-color: azure;
+}
+
+
+#cpc-main-content h1 tt, h1 code { font-size: inherit; }
+#cpc-main-content h2 tt, h2 code { font-size: inherit; }
+#cpc-main-content h3 tt, h3 code { font-size: inherit; }
+#cpc-main-content h4 tt, h4 code { font-size: inherit; }
+#cpc-main-content h5 tt, h5 code { font-size: inherit; }
+#cpc-main-content h6 tt, h6 code { font-size: inherit; }
+
+
+#cpc-main-content blockquote, figure { display: block;}
+
+
+/*---------可能 inline 的 元素 padding ------------*/
+#cpc-main-content code, strong, em, a{
+	padding: 0px 2px 0px 4px;
+}
+
+#cpc-main-content strong, em,a{ display: inline; }
+
+/*sans-serif + 黑體 */
+#cpc-main-content h1,h2,h3,h4,h5,h6{
+	font-family: 
+		"微軟雅黑","Microsoft YaHei"
+		"微軟正黑體", "Microsoft JhengHei",
+		"Helvetica";
+}
+
+/*serif	+ 宋體*/
+#cpc-main-content p,em {
+	font-family: 
+		"Times New Roman",
+		"新細明體", "PMingLiU", 
+		"細明體", "MingLiU", 
+		"標楷體", "DFKai-sb"
+		;	
+}
+
+#cpc-main-content strong {
+	FONT-WEIGHT: bold;
+	COLOR: black;
+	background-color: yellow;
+}
+
+#cpc-main-content em {
+	font-style: italic;
+}
+
+
+/*------Font Size Using CSS3----------*/
+#cpc-main-content html {font-size: 100%;}
+#cpc-main-content h1 	{ font-size: 44px; 	font-size: 2.5rem; }
+#cpc-main-content h2 	{ font-size: 28px; 	font-size: 2.0srem;}
+#cpc-main-content h3 	{ font-size: 24px;	font-size: 1.2rem;}
+#cpc-main-content h4 	{ font-size: 18px;	font-size: 1.1rem;}
+#cpc-main-content h5 	{ font-size: 16px;	font-size: 1rem;}
+#cpc-main-content h6 	{ font-size: 16px;	font-size: 1rem;}
+#cpc-main-content p  	{ font-size: 16px;	font-size: 1rem;}
+
+
+/* Code Block Style */
+#cpc-main-content code, pre {
+  padding: 0 3px 2px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  color: #333333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+	line-height:1.5rem;
+}
+
+#cpc-main-content code {
+  color: #d14;
+  white-space: nowrap;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+#cpc-main-content pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+#cpc-main-content pre.prettyprint {
+  margin-bottom: 20px;
+}
+
+#cpc-main-content pre code {
+  padding: 0;
+  color: inherit;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0;
+}
+
+#cpc-main-content .pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+#cpc-main-contentbody {
+	background: white;
+	position: relative;
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;
+	border: dotted WhiteSmoke;
+	word-wrap: normal;
+}
+
+
+/* fail
+h2, h3 ~ p{ margin: 0px;}
+h3, h2 ~ p{ margin-left: 1rem;}
+h4, h3 ~ p{ margin-left: 2rem;}
+h5, h4 ~ p{ margin-left: 3rem;}
+h6, h5 ~ p{ margin-left: 4rem;}
+*/
+
+#cpc-main-contenth1,h2,h3,h4,h5,h6{
+	display: block;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+#cpc-main-contenth2,h3{	padding-left :0.5rem; }/* with background-color*/
+
+#cpc-main-contenth4,h5,h6{ padding-left :0rem; }/* without background-color*/
+
+#cpc-main-contenth2{ margin: 2rem 0 0 0;}
+#cpc-main-contenth3{ margin: 1rem 0 0 1.5rem;}
+#cpc-main-contenth4{ margin-left: 3rem;}
+#cpc-main-contenth5{ margin-left: 4.5rem;}
+#cpc-main-contenth6{ margin-left: 4.5rem;}
+#cpc-main-contentp,ol{ margin-left: 4.5rem; }
+
+#cpc-main-contenth2 + h3{margin-top: 0rem;}
+
+#cpc-main-contentpre{margin: 1rem 0rem 1rem 6rem ;}
+
+/* Make sure inline code will not too squishy*/
+#cpc-main-contentcode { display:inline-block; }
+
+/* ----------------------- Lists ----------------------*/
+/* general settings */
+#cpc-main-contentul, ol{
+	list-style-position: inside;
+	font-size: 17px;		
+	font-size: 1.1rem;
+	list-style-type: square;
+	color: RoyalBlue;
+}
+
+#cpc-main-contentul,ol,blockquotes{ 
+	margin-left: 2rem;
+}
+
+/* 1st-level list adjust background and margin/padding */
+#cpc-main-contentbody>ul{
+	margin: 0.5rem 0rem 0.5rem 6rem;
+	background-color: MintCream;
+	padding:0.5rem 0rem 0.5rem 0.5rem;
+}
+#cpc-main-contentbody>ol{
+	margin: 0.5rem 0rem 0.5rem 6rem;
+	background-color: MintCream;
+	padding:0.5rem 0rem 0.5rem 0.5rem;
+}
+#cpc-main-contentbody>blockquote{
+	margin: 0.5rem 0rem 0.5rem 6rem;
+}
+
+
+/* first p in every list should behave like list item */
+#cpc-main-contentli>p:first-of-type{
+	display: inline;
+	margin-left:0rem;
+	color: inherit;
+	font-size: inherit;
+	font-family:inherit;
+}
+
+#cpc-main-contentli{line-height: 2rem; }
+	
+
+#cpc-main-contentli p{
+	
+	margin: 0.25rem 0rem 0.25rem 2rem;
+	
+}
+
+
+
+/* ------------- Blockquotes -----------------*/
+/* Every blockquote indent 2rem */
+#cpc-main-contentblockquote {
+	margin: 0.25rem 0rem 0.25rem 2rem;	
+	padding: 0.25rem 0rem 0.25rem 0.5rem;
+	border-left:thick double #3D5C5C;
+}
+#cpc-main-contentblockquote p{
+	line-height: 2rem; 
+	margin: 0.25rem 0rem 0.25rem 0rem;
+	/* all p in blockquote should indent a little compared to its parent */
+}
+
+/* Except the first blockquote in body indent 4.5rem */
+#cpc-main-contentbody>blockquote{
+	margin: 0.5rem 0rem 0.5rem 6rem;	
+	padding:0.5rem 0rem 0.5rem 0.5rem;
+}
+
+/* Background-coloor */
+#cpc-main-contentblockquote {background-color: #E0EBEB;}
+#cpc-main-contentblockquote > blockquote{ background-color: #C2D6D6;}
+#cpc-main-contentblockquote > blockquote > blockquote{ background-color:#AFC1C1;}
+
