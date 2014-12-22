@@ -9,7 +9,10 @@ h2{
 article>h2{
 	/* This is for titles of articles displayed in category.html*/
 	font-weight: bold;
+	text-decoration: none;
+	color: black;
 }
+
 
 h1{
 	font-weight:bold;
@@ -30,7 +33,11 @@ abbr{
 	background-color: yellow;
 }
 
-div.summary{
-	background-color: #F5F5F5;
-	border: 1px solid #E3E3E3;
+div.summary h2{
+	margin-top: 3px;
+}
+
+.tag-in-sidebar{
+	padding: 3px;
+	float: left;
 }
