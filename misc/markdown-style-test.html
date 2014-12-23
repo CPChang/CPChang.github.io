@@ -30,6 +30,7 @@
     <link href="http://cpchang.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="http://cpchang.github.io/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="http://cpchang.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cpchang.github.io/theme/css/style.css" type="text/css"/>
         <link href="http://cpchang.github.io/static/custom.css" rel="stylesheet">
 
@@ -67,6 +68,11 @@ Chang-Pao Chang            </a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
               <li><a href="http://cpchang.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
@@ -259,6 +265,7 @@ Quote inside list</p>
 </tr>
 </tbody>
 </table>
+<p>However, it's sad that markdown table can't use with the extension <code>markdown.attr_list</code>. </p>
 </section><section class="section2" id="definition-list"><h2>Definition list</h2>
 <dl>
 <dt>apples</dt>
@@ -284,7 +291,8 @@ Quote inside list</p>
 <p>use <code>\label{eq_name}</code> to label the equation, and <code>$\ref{eq_name}$</code> to refer to that equation
 <code>\begin{equation} \label{quadratic} ax^2+bx_2+c_n \end{equation}</code> produce <div class="math">\begin{equation} \label{quadratic} ax^2+bx_2+c_n=\infty \end{equation}</div>
 The reference is <code>$\eqref{quadratic}$</code> which produces <span class="math">\(\eqref{quadratic}\)</span>.</p>
-<p><a href="http://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics">A good latex reference</a></p>
+<p><a class="btn btn-info btn-xs" href="http://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics">latex reference</a>
+<a class="btn btn-info btn-xs" href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">Mathjax reference</a></p>
 </section></section></section><script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
@@ -355,13 +363,6 @@ The reference is <code>$\eqref{quadratic}$</code> which produces <span class="ma
 						<ul class="list-group " id="tags">
 								<li class="list-group-item tag-in-sidebar">
 									<div class="btn btn-default btn-xs">
-										<a href="http://cpchang.github.io/tag/linear-programming.html">
-											Linear Programming
-										</a>
-									</div>
-								</li>
-								<li class="list-group-item tag-in-sidebar">
-									<div class="btn btn-default btn-xs">
 										<a href="http://cpchang.github.io/tag/matlab.html">
 											Matlab
 										</a>
@@ -369,8 +370,15 @@ The reference is <code>$\eqref{quadratic}$</code> which produces <span class="ma
 								</li>
 								<li class="list-group-item tag-in-sidebar">
 									<div class="btn btn-default btn-xs">
-										<a href="http://cpchang.github.io/tag/signal-integrity.html">
-											Signal Integrity
+										<a href="http://cpchang.github.io/tag/linear-programming.html">
+											Linear Programming
+										</a>
+									</div>
+								</li>
+								<li class="list-group-item tag-in-sidebar">
+									<div class="btn btn-default btn-xs">
+										<a href="http://cpchang.github.io/tag/power-integrity.html">
+											Power Integrity
 										</a>
 									</div>
 								</li>
@@ -383,8 +391,8 @@ The reference is <code>$\eqref{quadratic}$</code> which produces <span class="ma
 								</li>
 								<li class="list-group-item tag-in-sidebar">
 									<div class="btn btn-default btn-xs">
-										<a href="http://cpchang.github.io/tag/power-integrity.html">
-											Power Integrity
+										<a href="http://cpchang.github.io/tag/signal-integrity.html">
+											Signal Integrity
 										</a>
 									</div>
 								</li>

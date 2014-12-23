@@ -27,6 +27,7 @@
     <link href="http://cpchang.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="http://cpchang.github.io/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="http://cpchang.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cpchang.github.io/theme/css/style.css" type="text/css"/>
         <link href="http://cpchang.github.io/static/custom.css" rel="stylesheet">
 
@@ -64,6 +65,11 @@ Chang-Pao Chang            </a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
               <li><a href="http://cpchang.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
@@ -84,7 +90,8 @@ Chang-Pao Chang            </a>
         <h1 class="entry-title">Resume</h1>
         
         <div class="entry-content">
-            <section class="section2" id="files-pdf"><h2>Files <a class="btn btn-info btn-sm" href="http://cpchang.github.io/pdfs/cv.pdf">PDF</a></h2>
+            <section class="section2" id="files"><h2>Files</h2>
+<p><a class="btn btn-info btn-sm" href="http://cpchang.github.io/pdfs/cv.pdf">PDF</a></p>
 </section><section class="section2" id="research-interests"><h2>Research Interests</h2>
 <p><div class="row">
     <div class="list-group col-xs-1"></div>
@@ -222,13 +229,6 @@ Chang-Pao Chang            </a>
 						<ul class="list-group " id="tags">
 								<li class="list-group-item tag-in-sidebar">
 									<div class="btn btn-default btn-xs">
-										<a href="http://cpchang.github.io/tag/linear-programming.html">
-											Linear Programming
-										</a>
-									</div>
-								</li>
-								<li class="list-group-item tag-in-sidebar">
-									<div class="btn btn-default btn-xs">
 										<a href="http://cpchang.github.io/tag/matlab.html">
 											Matlab
 										</a>
@@ -236,8 +236,15 @@ Chang-Pao Chang            </a>
 								</li>
 								<li class="list-group-item tag-in-sidebar">
 									<div class="btn btn-default btn-xs">
-										<a href="http://cpchang.github.io/tag/signal-integrity.html">
-											Signal Integrity
+										<a href="http://cpchang.github.io/tag/linear-programming.html">
+											Linear Programming
+										</a>
+									</div>
+								</li>
+								<li class="list-group-item tag-in-sidebar">
+									<div class="btn btn-default btn-xs">
+										<a href="http://cpchang.github.io/tag/power-integrity.html">
+											Power Integrity
 										</a>
 									</div>
 								</li>
@@ -250,8 +257,8 @@ Chang-Pao Chang            </a>
 								</li>
 								<li class="list-group-item tag-in-sidebar">
 									<div class="btn btn-default btn-xs">
-										<a href="http://cpchang.github.io/tag/power-integrity.html">
-											Power Integrity
+										<a href="http://cpchang.github.io/tag/signal-integrity.html">
+											Signal Integrity
 										</a>
 									</div>
 								</li>

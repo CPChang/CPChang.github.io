@@ -2,7 +2,8 @@
 <html lang="en"
 >
 <head>
-    <title>Articles by Chang-Pao Chang - Chang-Pao Chang</title>
+    <title>Search - Chang-Pao Chang
+</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -80,62 +81,8 @@ Chang-Pao Chang            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-        <ol class="breadcrumb">
-            <li><a href="http://cpchang.github.io" title="Chang-Pao Chang"><i class="fa fa-home fa-lg"></i></a></li>
-            <li><a href="http://cpchang.github.io/authors.html" title="Authors">Authors</a></li>
-            <li class="active">Chang-Pao Chang</li>
-        </ol>
 
-            <article>
-                <h2><a href="http://cpchang.github.io/project/3d-transistors-and-3d-interconnects-for-advanced-vlsi-system.html">3D Transistors and 3D Interconnects for Advanced VLSI System</a></h2>
-                <div class="summary well"><section class="section2" id="abstract"><h2>Abstract</h2>
-<p>This integrated project covers many aspects including <strong>material</strong>, <strong>device</strong>, <strong>fabrication</strong>, <strong>circuit design</strong>, and <strong>modeling</strong>. The goal is to develop technologies for 3D IC stacking and high mobility 3D transistors for advanced CMOS technology nodes at 15/14 nm and beyond, and to solve the challenges in the above mentioned areas. </p>
-
-                    <a class="btn btn-default btn-xs" href="http://cpchang.github.io/project/3d-transistors-and-3d-interconnects-for-advanced-vlsi-system.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://cpchang.github.io/project/loop-of-zen-why-so-serious.html">Loop of Zen - Why so Serious</a></h2>
-                <div class="summary well"><section class="section2" id="why-so-serious"><h2>Why so serious?</h2>
-<p>Somebody gave me a interesting puzzle game, <a href="www.kongregate.com/games/ahnt/loops-of-zen">Loop of Zen</a>. After <strong> 10 hours</strong> of furstration, I simply decided to spend about an hour to develop a Matlab code to solve this game. </p>
-<section class="section3" id="steps"><h3>Steps</h3>
-<ol>
-<li><a href="#pattern-recognition">Pattern recoginition</a> to identify the elements.</li>
-<li>Solve this problem by <a href="#recursion">recursion</a> or <a href="#integer-linear-programming">ILP</a>.</li>
-</ol>
-
-                    <a class="btn btn-default btn-xs" href="http://cpchang.github.io/project/loop-of-zen-why-so-serious.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://cpchang.github.io/misc/glpk-for-matlab-in-windows.html">GLPK for Matlab in Windows</a></h2>
-                <div class="summary well"><section class="section2" id="glpk"><h2>GLPK</h2>
-<p><a class="btn btn-info btn-xs" href="http://en.wikipedia.org/wiki/GNU_Linear_Programming_Kit">Wiki</a>
-<a class="btn btn-info btn-xs" href="http://www.gnu.org/software/glpk/glpk.html">Project Website</a></p>
-<p><a href="http://www.gnu.org/software/glpk/glpk.html">GLPK (GNU Linear Programming Kit)</a> is a set of routines written in the ANSI C programming language and organized in the form of a callable library. It is intended for solving linear programming (LP), mixed integer programming (MIP), and other related problems.</p>
-<section class="section3" id="glpk-mex"><h3>GLPK MEX</h3>
-<p><a href="http://glpkmex.sourceforge.net/">GLPK MEX</a> is a Matlab MEX Interface for the GLPK library, developed by Nicolo' Giorgetti.</p>
-
-                    <a class="btn btn-default btn-xs" href="http://cpchang.github.io/misc/glpk-for-matlab-in-windows.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://cpchang.github.io/misc/markdown-style-test.html">Markdown Style Test</a></h2>
-                <div class="summary well"><section class="section1" id="an-h1-header"><h1>An h1 header</h1>
-<section class="section2" id="an-h2-header"><h2>An h2 header</h2>
-<section class="section3" id="an-h3-header"><h3>An h3 header</h3>
-<section class="section4" id="an-h4-header"><h4>An h4 header</h4>
-<section class="section5" id="an-h5-header"><h5>An h5 header</h5>
-<section class="section6" id="an-h6-header"><h6>An h6 header</h6>
-
-                    <a class="btn btn-default btn-xs" href="http://cpchang.github.io/misc/markdown-style-test.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
+<div id="tipue_search_content"></div>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -238,5 +185,18 @@ Chang-Pao Chang            </a>
 <script src="http://cpchang.github.io/theme/js/respond.min.js"></script>
 
 
+    <link href="http://cpchang.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script type="text/javascript" src="http://cpchang.github.io/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://cpchang.github.io/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'mode' : 'json',
+        'show': 10,
+        'newWindow': false,
+        'contentLocation': 'tipuesearch_content.json'
+      });
+    });
+    </script>
 </body>
 </html>
