@@ -14,13 +14,13 @@
 
         <meta name="author" content="Chang-Pao Chang" />
         <meta name="keywords" content="Matlab,Linear Programming" />
-        <meta name="description" content="Why so serious? Somebody gave me a interesting puzzle game, Loop of Zen. After 10 hours of furstration, I simply decided to spend about an hour to develop a Matlab code to solve this game. Steps Pattern recoginition to identify ..." />
+        <meta name="description" content="Why so serious? Somebody gave me a interesting puzzle game, Loop of Zen. After 10 hours of furstration, I simply decided to spend about an hour to develop a Matlab code to solve this game. This game is to rotate ..." />
 
         <meta property="og:site_name" content="Chang-Pao Chang" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Loop of Zen - Why so Serious"/>
         <meta property="og:url" content="http://cpchang.github.io/project/loop-of-zen-why-so-serious.html"/>
-        <meta property="og:description" content="Why so serious? Somebody gave me a interesting puzzle game, Loop of Zen. After 10 hours of furstration, I simply decided to spend about an hour to develop a Matlab code to solve this game. Steps Pattern recoginition to identify ..."/>
+        <meta property="og:description" content="Why so serious? Somebody gave me a interesting puzzle game, Loop of Zen. After 10 hours of furstration, I simply decided to spend about an hour to develop a Matlab code to solve this game. This game is to rotate ..."/>
         <meta property="article:published_time" content="2015-02-04" />
             <meta property="article:section" content="project" />
             <meta property="article:tag" content="Matlab" />
@@ -120,14 +120,12 @@ Chang-Pao Chang            </a>
                 </div>
                 <p><img alt="Solving Loop of Zen Recursively" class="figcap col-md-8 col-sm-12" src="http://cpchang.github.io/project/loopZen/x30_17.txt.gif" /></p>
 <section class="section2" id="why-so-serious"><h2>Why so serious?</h2>
-<p>Somebody gave me a interesting puzzle game, <a href="www.kongregate.com/games/ahnt/loops-of-zen">Loop of Zen</a>. After <strong> 10 hours</strong> of furstration, I simply decided to spend about an hour to develop a Matlab code to solve this game. </p>
-<section class="section3" id="steps"><h3>Steps</h3>
+<p>Somebody gave me a interesting puzzle game, <a href="www.kongregate.com/games/ahnt/loops-of-zen">Loop of Zen</a>. After <strong> 10 hours</strong> of furstration, I simply decided to spend about an hour to develop a Matlab code to solve this game. This game is to rotate each element on either 0,90,180,270 degree to form a <strong>close graph</strong>. </p>
+</section><section class="section2" id="steps"><h2>Steps</h2>
 <ol>
 <li><a href="#pattern-recognition">Pattern recoginition</a> to identify the elements.</li>
 <li>Solve this problem by <a href="#recursion">recursion</a> or <a href="#integer-linear-programming">ILP</a>.</li>
 </ol>
-<p>This code is uploaded to <a href="#">github</a>.  </p>
-</section></section><section class="section2" id="pattern-recognition"><h2>Pattern Recognition</h2>
 </section><section class="section2" id="solving-puzzles"><h2>Solving Puzzles</h2>
 <p>After have the right element pattern, we can solve this problem either by conventional recursion or Integer Linear Programming (ILP). The later solution had become a great practice of my recent lecture taken in Coursera. </p>
 <p>By the way, <strong>Linear and Integer Programming</strong>, <a href="https://www.coursera.org/course/linearprogramming">https://www.coursera.org/course/linearprogramming</a> was a great lecture given by professor Sriram Sankaranarayanan in University of Colorado Boulder. </p>
@@ -184,34 +182,8 @@ Chang-Pao Chang            </a>
 
 </section></section><section class="section2" id="method-2-integer-linear-programming"><h2>Method 2 - Integer Linear Programming</h2>
 <p>A faster (and fancier) way to deal with this is to use ILP. The rescursive solution is actually the <a href="http://en.wikipedia.org/wiki/Branch_and_bound">Branch and Bound</a> in solving ILP, which branch all variables and create leaves. However, the ILP can actually solved faster by using <a href="http://en.wikipedia.org/wiki/Cutting-plane_method">cutting-plane method</a> . </p>
-<div class="math">$$x^2+bx+c=\infty$$</div>
-</section><script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: 'center'," +
-        "    displayIndent: '0em'," +
-        "    showMathMenu: true," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-        "    } " +
-        "}); ";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
+<p>T.B.D</p>
+</section>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -257,15 +229,15 @@ Chang-Pao Chang            </a>
 							</li>
 							<li class="list-group-item tag-in-sidebar">
 								<div class="btn btn-default btn-xs">
-									<a href="http://cpchang.github.io/tag/matlab.html">
-										Matlab
+									<a href="http://cpchang.github.io/tag/3d-ic.html">
+										3D-IC
 									</a>
 								</div>
 							</li>
 							<li class="list-group-item tag-in-sidebar">
 								<div class="btn btn-default btn-xs">
-									<a href="http://cpchang.github.io/tag/signal-integrity.html">
-										Signal Integrity
+									<a href="http://cpchang.github.io/tag/matlab.html">
+										Matlab
 									</a>
 								</div>
 							</li>
@@ -278,8 +250,8 @@ Chang-Pao Chang            </a>
 							</li>
 							<li class="list-group-item tag-in-sidebar">
 								<div class="btn btn-default btn-xs">
-									<a href="http://cpchang.github.io/tag/3d-ic.html">
-										3D-IC
+									<a href="http://cpchang.github.io/tag/signal-integrity.html">
+										Signal Integrity
 									</a>
 								</div>
 							</li>
