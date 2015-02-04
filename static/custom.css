@@ -21,7 +21,7 @@ h1{
 .btn a{
 	color: inherit;
 }
-a.lsit-group-item.active{
+a.list-group-item.active{
 	color: inherit;
 }
 a{
@@ -40,4 +40,39 @@ div.summary h2{
 .tag-in-sidebar{
 	padding: 3px;
 	float: left;
+}
+
+#tipue_search_input{
+	border-radius: 5px;
+	margin: 9px 5px 8px 5px;
+	padding: 4px 4px 4px 30px;
+	background-position: 8px 8px;
+}
+
+.img-float-right{
+	float: right;
+}
+
+/* put image and figcaption center-aligned (if not use-img-float-right)*/
+figure img{
+	display: block;
+	margin: 0 auto;
+}
+figure figcaption{	
+	text-align: center;
+}
+/* figure counter */
+article	{	counter-reset: figures;	}
+figure 	{	counter-increment: figures;	}
+figure figcaption:before {	content: 'Fig. ' counter(figures) ' - '; }
+
+/* clear the floating figure*/
+article section{
+	clear: both;	
+}
+
+figure{ 
+	border: 1px solid gray; 
+	border-radius: 5px;
+	margin: 1px 0px;
 }

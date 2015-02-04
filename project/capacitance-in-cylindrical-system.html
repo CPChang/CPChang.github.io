@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>Capacitance in Cylindrical System - Chang-Pao Chang</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="http://cpchang.github.io/project/capacitance-in-cylindrical-system.html">
+
+        <meta name="author" content="Chang-Pao Chang" />
+        <meta name="keywords" content="3D-IC,Signal Integrity,Computational Electromagnetic" />
+        <meta name="description" content="Introduction In 3D-IC, the extraction of equivalent circuit of TSV (Through Silicon Vias) is the most fundamental part. However, hundreds of thousands of vias can take very long time to simulate. By utilizing the Multipole Boundary Element Method1, the ..." />
+
+        <meta property="og:site_name" content="Chang-Pao Chang" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Capacitance in Cylindrical System"/>
+        <meta property="og:url" content="http://cpchang.github.io/project/capacitance-in-cylindrical-system.html"/>
+        <meta property="og:description" content="Introduction In 3D-IC, the extraction of equivalent circuit of TSV (Through Silicon Vias) is the most fundamental part. However, hundreds of thousands of vias can take very long time to simulate. By utilizing the Multipole Boundary Element Method1, the ..."/>
+        <meta property="article:published_time" content="2015-02-04" />
+            <meta property="article:section" content="project" />
+            <meta property="article:tag" content="3D-IC" />
+            <meta property="article:tag" content="Signal Integrity" />
+            <meta property="article:tag" content="Computational Electromagnetic" />
+            <meta property="article:author" content="Chang-Pao Chang" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://cpchang.github.io/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="http://cpchang.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://cpchang.github.io/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="http://cpchang.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cpchang.github.io/theme/css/style.css" type="text/css"/>
+        <link href="http://cpchang.github.io/static/custom.css" rel="stylesheet">
+
+	
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://cpchang.github.io/" class="navbar-brand">
+Chang-Pao Chang            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://cpchang.github.io/pages/publication.html">
+                             Publication
+                          </a></li>
+                         <li><a href="http://cpchang.github.io/pages/resume.html">
+                             Resume
+                          </a></li>
+                        <li class="active">
+								
+                            <a href="http://cpchang.github.io/category/project.html"><i class="fa fa-folder-open"></i> Project</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="http://cpchang.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <ol class="breadcrumb">
+                <li><a href="http://cpchang.github.io" title="Chang-Pao Chang"><i class="fa fa-home fa-lg"></i></a></li>
+                <li><a href="http://cpchang.github.io/category/project.html" title="project">project</a></li>
+                <li class="active">Capacitance in Cylindrical System</li>
+            </ol>
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://cpchang.github.io/project/capacitance-in-cylindrical-system.html"
+                       rel="bookmark"
+                       title="Permalink to Capacitance in Cylindrical System">
+                        Capacitance in Cylindrical System
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-02-04T07:35:13.561416+08:00"> Wed, 04 Feb 2015</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://cpchang.github.io/tag/3d-ic.html">3D-IC</a>
+        /
+	<a href="http://cpchang.github.io/tag/signal-integrity.html">Signal Integrity</a>
+        /
+	<a href="http://cpchang.github.io/tag/computational-electromagnetic.html">Computational Electromagnetic</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <section class="section2" id="introduction"><h2>Introduction</h2>
+<p>In 3D-IC, the extraction of equivalent circuit of TSV (Through Silicon Vias) is the most fundamental part. However, hundreds of thousands of vias can take very long time to simulate. By utilizing the Multipole Boundary Element Method<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>, the analytic Green's function is given, without numerical integration. Meanwhile, the basis number can be dramatically reduced, and thus reduced the time for matrix inversion, which usually be the most time-consuming part in BEM. </p>
+</section><section class="section2" id="result"><h2>Result</h2>
+<section class="section3" id="charge-distribution-in-homogeneous-system"><h3>Charge Distribution in Homogeneous System</h3>
+<p>One can easily shown the proximity effect between vias with the same or opposite polarity. Charge tends to crowd on the both side of vias with opposite polarity, while shrink away with the same one. </p>
+<p><img alt="Charge Distribution on Metal Cylinder in Homogeneous System" class="figcap col-md-8 col-sm-12" src="http://cpchang.github.io/project/cap2D/chargeDistribution.jpg" /></p>
+</section><section class="section3" id="proximity-effect-shown-in-potential-field-and-electric-field"><h3>Proximity Effect Shown in Potential Field and Electric Field</h3>
+<p><img alt="Potential Field v.s. frequency" class="figcap col-md-6 col-sm-12" src="http://cpchang.github.io/project/cap2D/proximity_V.gif" /></p>
+<p><img alt="Electic Field v.s. frequency" class="figcap col-md-6 col-sm-12" src="http://cpchang.github.io/project/cap2D/proximity_E.gif" /></p>
+</section><section class="section3" id="breakdown-frequency-in-3d-ic"><h3>Breakdown Frequency in 3D-IC</h3>
+<p>Note that the thinner the isolation layer, the lower the breakdown frequency. </p>
+<p><img alt="Potential Field v.s. frequency, thickness of isolation is 0.5um" class="figcap col-md-6 col-sm-12" src="http://cpchang.github.io/project/cap2D/uniform9_05.csv.gif" /></p>
+<p><img alt="Potential Field v.s. frequency, thickness of isolation is 2.5um" class="figcap col-md-6 col-sm-12" src="http://cpchang.github.io/project/cap2D/uniform9_25.csv.gif" /></p>
+</section></section><section class="section2" id="algorithm-efficiency"><h2>Algorithm Efficiency</h2>
+<p>Compare with commercial tool (FEM), we can observe that this method can *ignificantly reduce the computational complexity. (about <strong>1sec for 144 TSVs</strong>)</p>
+<p><img alt="Computation Time Elapsed with isolation layer. Red: Commercial Tool, Blue: Multipole BEM" class="figcap col-md-6 col-sm-12" src="http://cpchang.github.io/project/cap2D/complexity_w_ox.jpg" /></p>
+<p><img alt="Computation Time Elapsed without isolation layer. Red: Commercial Tool, Blue: Multipole BEM" class="figcap col-md-6 col-sm-12" src="http://cpchang.github.io/project/cap2D/complexity_wo_ox.jpg" /></p>
+</section><section class="section2" id="future-work"><h2>Future Work</h2>
+<p>T.B.D.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Y. Liu, Fast Multipole Boundary Element Method: Theory and Applications in Engineering, 1st ed. Cambridge University Press, 2009&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+</section>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="mailto:chang.chang.bao@gmail.com"><i class="fa fa-at fa-lg"></i> Mail</a></li>
+                <li class="list-group-item"><a href="http://tw.linkedin.com/pub/chang-bao-chang/69/8a5/758"><i class="fa fa-linkedin-square fa-lg"></i> Linkedin</a></li>
+                <li class="list-group-item"><a href="http://github.com/cpchang"><i class="fa fa-github-square fa-lg"></i> Github</a></li>
+                <li class="list-group-item"><a href="https://www.facebook.com/evareiasuaka"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+              </ul>
+            </li>
+
+
+            <li class="list-group-item"><a href="http://cpchang.github.io/"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
+                <ul class="list-group" id="categories">
+                    <li class="list-group-item">
+                        <a href="http://cpchang.github.io/category/project.html">
+                            <i class="fa fa-folder-open fa-lg"></i> project
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+			
+				
+				<li class="list-group-item"><a href="http://cpchang.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+					<div class="row">
+						<ul class="list-group " id="tags">
+							<li class="list-group-item tag-in-sidebar">
+								<div class="btn btn-default btn-xs">
+									<a href="http://cpchang.github.io/tag/computational-electromagnetic.html">
+										Computational Electromagnetic
+									</a>
+								</div>
+							</li>
+							<li class="list-group-item tag-in-sidebar">
+								<div class="btn btn-default btn-xs">
+									<a href="http://cpchang.github.io/tag/matlab.html">
+										Matlab
+									</a>
+								</div>
+							</li>
+							<li class="list-group-item tag-in-sidebar">
+								<div class="btn btn-default btn-xs">
+									<a href="http://cpchang.github.io/tag/signal-integrity.html">
+										Signal Integrity
+									</a>
+								</div>
+							</li>
+							<li class="list-group-item tag-in-sidebar">
+								<div class="btn btn-default btn-xs">
+									<a href="http://cpchang.github.io/tag/linear-programming.html">
+										Linear Programming
+									</a>
+								</div>
+							</li>
+							<li class="list-group-item tag-in-sidebar">
+								<div class="btn btn-default btn-xs">
+									<a href="http://cpchang.github.io/tag/3d-ic.html">
+										3D-IC
+									</a>
+								</div>
+							</li>
+						</ul>					
+					</div>
+					
+				</li>
+		 
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2015 Chang-Pao Chang
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://cpchang.github.io/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://cpchang.github.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://cpchang.github.io/theme/js/respond.min.js"></script>
+
+	<script src="http://cpchang.github.io/theme/js/imageCaption.js"></script>
+
+
+</body>
+</html>
